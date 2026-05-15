@@ -71,21 +71,21 @@ app.get('/stream/:type/:id.json', async (req, res) => {
           ]
         },
         119: { // Prime Video
-          url: `https://www.amazon.com.br/s?k=${encodedTitle}&i=instant-video`,
+          url: `https://www.primevideo.com/search?phrase=${encodedTitle}`,
           uris: [
-            { platform: 'android', uri: `aiv://aiv/search/?query=${encodedTitle}` },
-            { platform: 'ios', uri: `aiv://aiv/search/?query=${encodedTitle}` }
+            { platform: 'android', uri: `primevideo://search?q=${encodedTitle}` },
+            { platform: 'ios', uri: `primevideo://search?q=${encodedTitle}` }
           ]
         },
         1899: { // Max
-          url: `https://www.max.com/search/${encodedTitle}/`,
+          url: `https://play.max.com/search?q=${encodedTitle}`,
           uris: [
             { platform: 'android', uri: `wbdstreaming://search?q=${encodedTitle}` },
             { platform: 'ios', uri: `wbdstreaming://search?q=${encodedTitle}` }
           ]
         },
         1825: { // Max Amazon Channel
-          url: `https://www.max.com/search/${encodedTitle}/`,
+          url: `https://play.max.com/search?q=${encodedTitle}`,
           uris: [
             { platform: 'android', uri: `wbdstreaming://search?q=${encodedTitle}` },
             { platform: 'ios', uri: `wbdstreaming://search?q=${encodedTitle}` }
