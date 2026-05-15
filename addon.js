@@ -1,7 +1,8 @@
+require('dotenv').config()
 const express = require('express')
 const axios = require('axios')
 
-const TMDB_KEY = '7ab8a2e339d7f3644d075128951597b0'
+const TMDB_KEY = process.env.TMDB_KEY
 const app = express()
 
 app.use((req, res, next) => {
