@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const TMDB_KEY = process.env.TMDB_KEY || '7ab8a2e339d7f3644d075128951597b0'
+const TMDB_KEY = process.env.TMDB_KEY
 
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
