@@ -44,7 +44,7 @@ function getProviderInfo(providerId, encodedTitle) {
     119: {  // Prime Video
       name: 'Prime Video',
       webUrl: `https://www.primevideo.com/search?phrase=${encodedTitle}`,
-      appUri: `https://app.primevideo.com/search?phrase=${encodedTitle}`
+      appUri: `intent://app.primevideo.com/search?phrase=${encodedTitle}#Intent;scheme=https;package=com.amazon.avod.thirdpartyclient;end`
     },
     1899: { // Max
       name: 'Max',
